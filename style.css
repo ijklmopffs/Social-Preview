@@ -1,0 +1,148 @@
+body {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 97vh;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+}
+.text {
+  width: 350px;
+}
+.text h1 {
+  font-size: 40px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 900;
+  margin: 0;
+}
+.text p {
+  color: hsl(303, 10%, 53%);
+}
+.image {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  background-color: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  gap: 10px;
+  padding: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.image p {
+  margin-inline-start: 10px;
+  font-weight: bold;
+}
+.extra {
+  margin-inline-start: 35px;
+}
+.add {
+  margin-inline-start: 51px;
+}
+.second {
+  display: flex;
+  gap: 10px;
+  margin-block-start: 100px;
+}
+.card {
+  width: 260px;
+  color: white;
+  background-color: hsl(300, 43%, 22%);
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 1.2;
+  height: 140px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  border-radius: 50%;
+  height: 42px;
+  width: 40px;
+  margin-inline-end: 10px;
+}
+.profile h2,
+.profile h3 {
+  font-size: 15px;
+  margin: 0;
+  margin-block-start: 5px;
+}
+.profile h3 {
+  color: hsl(333, 80%, 67%);
+}
+.two {
+  width: 250px;
+  margin-block-start: 20px;
+}
+.three {
+  margin-block-start: 35px;
+}
+@media screen and (max-width: 420px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 5px;
+  }
+  .first {
+    flex-direction: column;
+    width: 100%;
+  }
+  .first h1,
+  .first p {
+    text-align: center;
+  }
+  .first p {
+    line-height: 1.2;
+    margin-block-end: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  .second {
+    flex-direction: column;
+    margin-block-start: 50px;
+    gap: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .image {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 4px;
+    margin-block-start: 18px;
+  }
+  .image div {
+    margin: 0;
+  }
+  .image p {
+    margin: 0;
+  }
+  .extra,
+  .add {
+    margin-inline-start: 0;
+  }
+  .card {
+    width: 235px;
+    padding: 14px;
+  }
+  .two,
+  .three {
+    margin-block-start: 10px;
+  }
+}
