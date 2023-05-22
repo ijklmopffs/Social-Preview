@@ -57,10 +57,9 @@ body {
   margin-block-start: 100px;
 }
 .card {
-  width: 260px;
   color: white;
   background-color: hsl(300, 43%, 22%);
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   line-height: 1.2;
   height: 140px;
@@ -85,18 +84,31 @@ body {
   color: hsl(333, 80%, 67%);
 }
 .two {
-  width: 250px;
   margin-block-start: 20px;
 }
 .three {
   margin-block-start: 35px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 820px) {
+  main {
+    width: 100%;
+  }
+  .add {
+    margin-inline-start: 0;
+  }
+  .extra {
+    margin-inline-start: 0;
+  }
+}
+@media screen and (max-width: 576px) {
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-block-end: 5px;
+  }
+  .text {
+    width: auto;
   }
   .first {
     flex-direction: column;
